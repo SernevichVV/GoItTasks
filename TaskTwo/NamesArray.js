@@ -5,18 +5,16 @@
 var arrOfNames = []; // create an empty array
 for (var i = 1; i < 6; i++) {
     var name = prompt("Enter the " + i + "th name", "");
-    //if (!/^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u){
-    // tried to check input for having letters only with using regular expression
-    // but unfortunately I don't know yet how to do it properly,
-    // I can do it, just need more time in order to understand
-    if (name == "") { // check for empty string
-        name = prompt("Please, fill in the text field", "");
-        --i;
+    name = name.trim();
+    while (!/^[a-zA-Zа-яА-Я]+$/g.test(name)) { //regular expressions check letters only
+        name = prompt("Please, fill the " + i + "th name with letters", "");
+        name = name.trim();
     }
     arrOfNames.push(name);
 }
 var searchName = prompt("Enter user's name", "");
-var indexOfName = arrOfNames.indexOf(searchName, [0]);
+searchName = searchName.trim();
+var indexOfName = arrOfNames.indexOf(searchName);
 if (indexOfName == -1) {
     alert("Sorry, we don't have user with this name");
 }

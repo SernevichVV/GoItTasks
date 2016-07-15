@@ -21,6 +21,7 @@ colorIGuess = colors[randomNumber];
 while (!finished) {
     userInput = prompt("I am thinking one of these colors: " + colors.join(", ") + ".\n\n"
         + "What color I am thinking of? \n\n");
+    userInput = userInput.trim();
     guess += 1;
     finished = checkGuess();
 
@@ -53,3 +54,5 @@ function checkGuess() {
         alert("Sorry, I don't recognize your color.\n\n Please try again.");
         return false;
     }
+
+}

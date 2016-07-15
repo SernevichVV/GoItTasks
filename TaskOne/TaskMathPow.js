@@ -3,8 +3,8 @@
  */
 
 
-var strNumb = (prompt("Enter the number", ""));// user's input in String format
-var strDegree = (prompt("Enter the degree", ""));
+
+/*
 // check for valid input if it's empty string pf not a number
 while (strNumb == "" || isNaN(strNumb) || strDegree == "" || isNaN(strDegree)) {
     // if it's ask user to enter value again do it until the valid value will be entered
@@ -24,4 +24,4 @@ else {
     }
 }
 
-console.log("Result is", result);
+console.log("Result is", result);*/
