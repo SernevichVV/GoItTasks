@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task four for GoIt</title>
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Arvo|BioRhyme+Expanded|Bitter|Bree+Serif|Cabin|Cinzel|
+    Cormorant+Upright|Dosis|Englebert|Frank+Ruhl+Libre|Josefin+Sans|Julius+Sans+One|News+Cycle|Nova+Mono|Oswald|Oxygen|Proza+Libre|Titillium+Web|
+    Yanone+Kaffeesatz" rel="stylesheet">
+
+    <link rel = "stylesheet" href = "./fourStyle.css">
+</head>
+<script src="./fourScript.js "></script>
+<script>
+    // for more encapsulation
+    // please, fill in the test structure following the next rules:
+    // 1 argument the question of test
+    // 2 argument array of answers
+    function generateTest() {
+        testConstructor.init("jsTest");
+
+        testConstructor.setTitle("Programming test");
+        testConstructor.askList("Что вернет вызов функции parseInt()", ["Зависит от движка браузера", "NaN", "0", "08","8"]);
+        testConstructor.askList('Выберите правильные варианты создания строковой переменной со значением "text"',
+                ["var s = 'text';", 'var s = "t"."ext";', 'var s = "text";', "var s = text;", "var s = { text };",
+                    "var s = new String(text);", "var s = new String('text');"]);
+        testConstructor.askList("По какой причине не желательно использовать оператор with?", ["Он сильно замедляет работу программы",
+            "Он некорректно работает во многих браузерах"]);
+    }
+</script>
+<body onload="generateTest()">
+<!-- added div as a container for more agile work with test,
+so you can add test structure in any position of the web page without depending of layout-->
+
+<div id ="jsTest" class="jsTest"></div>
+<div class = "picture" >
+    <img src="./img/ForIt.jpg" width="100%" height="auto">
+</div>
+
+</body>
+</html>
