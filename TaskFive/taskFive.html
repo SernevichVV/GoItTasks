@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Five</title>
+    <link rel="stylesheet" href="./fiveStyle.css">
+
+</head>
+<body>
+
+
+<div class="specialFont"><p>Life is just a moment between the past and the future...</p>
+    <p class="secondTitle">Enjoy every second <span class="italicStyle"> live it  </span>
+        and <span class="italicStyle"> feel it!</span></p>
+</div>
+<div class="center-panel">
+    <div class="wrapper">
+
+        <div id="tableContainer">
+            <div class="tableRow">
+
+                <div class="tdOneLeft">
+                    <img src="./img/left.png" alt="Photos of smalling people left corner">
+                </div>
+
+                <div class="tdTwo">
+                    <div class="top">
+                        <img src="./img/top.png" alt="Photos of smalling people at top of the web page">
+                    </div>
+                    <div class="timer">
+                        <p id="counter">00:00:00:000</p>
+                        <div>
+                            <button id="btnStart">Start</button>
+                            <button id="btnClear">Clear</button>
+                        </div>
+                    </div>
+                    <img src="./img/bottom.png" alt="Photos of smalling people at the bottom of the page">
+
+                </div>
+                <img class="tdThreeRight" src="./img/right.png" alt="Photos of smalling people right corner">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="./fiveJS.js"></script>
+<script>
+    var timer = new CountDownTimer("btnStart", "btnClear");
+    timer.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Josefin Sans', sans-serif;
+    src: local("Josefin Sans");
+url("https://fonts.googleapis.com/css?family=Josefin+Sans|Kaushan+Script|Open+Sans+Condensed:300");
+}
+
+body {
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.specialFont {
+    font-family: "Josefin Sans", Arial, Tahoma, sans-serif;
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: lighter;
+    color: ivory;
+    margin: 2% 0 2% 2%;
+}
+.secondTitle{
+   float: right;
+    margin-right: 2%;
+}
+.italicStyle{
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+    color: #ff740d;
+
+}
+
+.center-panel {
+    text-align: center;
+}
+
+.wrapper{
+    display: inline-block;
+}
+
+
+#tableContainer {
+    display: table;
+    border-spacing: 5px;
+    text-align: center; /* Выравнивание по центру */
+    padding-top: 2%;
+}
+
+.tableRow {
+    display: table-row;
+}
+
+.tdOneLeft, .tdTwo, .tdThreeRight {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.tdTwo {
+    padding-top: 0;
+}
+.tdOneLeft, .tdThreeRight{
+    padding-top: 20px;
+}
+
+
+.timer {
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Open Sans", Arial, Tahoma, sans-serif;
+    font-weight:100;
+    text-align: center;
+    color: ivory;
+    font-size: 4vw;
+}
+#counter{
+    padding-top: 10%;
+}
+
+#btnClear {
+    display: inline-block;
+    width: 10%;
+    min-width: 50px;
+    padding: 5px;
+    color: #ffffff;
+    border: 1px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+#btnClear:hover,
+#btnClear:active {
+
+    border: 1px solid #ffa534;
+    color: #ffa534;
+}
+
+
+#btnStart {
+    display: inline-block;
+    width: 10%;
+    min-width: 50px;
+    padding: 5px;
+    color: #000;
+    border: 1px solid #ffa534;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: rgba(255,165,52,0.8);
+
+}
+
+#btnStart:hover,
+#btnClear:active {
+
+    border: 1px solid #000;
+    color: #000;
+}
+
+
+
+
