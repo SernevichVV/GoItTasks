@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskFiveBonus</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amita|Anonymous+Pro|Dosis|Italianno">
+
+    <link rel="stylesheet" href="fiveBonusStyle.css">
+</head>
+<body>
+<div class="content">
+    <img src="./img/backgroungImg.jpg" alt="Road and stars ">
+</div>
+
+<div class="wrapper">
+    <div class="specialFont">
+       <p><span class="italicStyle">A  journey </span> of a thousand miles
+           begins with a single step</p>
+    </div>
+
+    <div class="timer">
+        <p id="counter">00:00:00:000</p>
+
+            <button id="btnStart">Start</button>
+            <button id="btnSplit">Split</button>
+            <button id="btnClear">Clear</button>
+
+            <div class="splitStyle">
+            </div>
+
+    </div>
+</div>
+
+
+<script src="./fiveBonusJS.js"></script>
+<script>
+    new CountDownTimer("btnStart", "btnClear").init();
+</script>
+</body>
+</html>

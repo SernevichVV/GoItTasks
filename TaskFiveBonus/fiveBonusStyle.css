@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    z-index: 0;
+    position: relative;
+}
+
+.wrapper {
+    position: absolute;
+    top: 3vh;
+    z-index: 1;
+    padding-left: 20vw;
+
+}
+
+.specialFont {
+    font-family: 'Amita', Tahoma, Arial cursive;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: lighter;
+    color: ivory;
+
+}
+
+
+.italicStyle {
+    font-family: 'Edwardian Script ITC','Italianno', Tahoma, Arial cursive;
+    font-size: 5vw;
+
+}
+
+.timer {
+    margin-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 5px;
+    width: 60vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: #302b74;
+    font-size: 3vw;
+    z-index: 3;
+    overflow: hidden;
+}
+
+#counter {
+    margin: 10% 0 3% 0 ;
+    font-size: 6vw;
+    font-family: 'Anonymous Pro', monospace;
+
+
+}
+.splitStyle{
+    width: 100%;
+    overflow-y: auto;
+    max-height: 45%;
+    margin-top: 1%;
+    position: relative;
+    font-family: 'Anonymous Pro', monospace;
+
+
+
+}
+#btnStart {
+    display: inline-block;
+    width: 10%;
+    min-width: 50px;
+    padding: 5px;
+    color: #ffffff;
+    border: 1px solid #565a8d;
+    text-align: center;
+    outline: none;
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+    background-color: #565a8d;
+
+}
+
+#btnStart:hover,
+#btnClear:active {
+
+    border: 1px solid #000;
+    color: #000;
+}
+
+#btnSplit {
+    display: inline-block;
+    width: 10%;
+    min-width: 50px;
+    padding: 5px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+#btnSplit:hover,
+#btnSplit:active,
+#btnClear:hover,
+#btnClear:active{
+
+    border: 1px solid #696969;
+    color: #696969;
+}
+
+#btnClear {
+    display: inline-block;
+    width: 10%;
+    min-width: 50px;
+    padding: 5px;
+    color: #ffffff;
+    border: 1px solid #8393ca;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: #8393ca;
+
+}
